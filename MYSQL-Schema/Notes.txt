@@ -1,0 +1,6 @@
+Schema SQL BU
+
+mysqldump -u username -p --no-data database_name > schema_backup.sql
+mysqldump -u username -p --no-data --all-databases > all_schemas_backup.sql
+mysqldump -u username -p --no-data database_name table1 table2 > tables_schema_backup.sql
+mysqldump -u username -p --no-data --routines --triggers database_name > schema_backup.sql
